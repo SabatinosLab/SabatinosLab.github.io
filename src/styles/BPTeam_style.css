@@ -1,0 +1,81 @@
+/*head style*/
+head {
+    background-color: #3595fc;
+}
+
+/*header style*/
+header {
+    text-align: center; 
+    padding: 50px;
+    font-size: larger;
+    background-image: linear-gradient(180deg, #3595fc, #ffffff);
+    font-family:Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/*navigation bar button style*/
+nav a {
+    color: #251f93;
+    text-decoration: none;
+    font-size: larger;   
+    padding: 200 px;  
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    ul{ list-style-type: none;}  
+}
+
+/*body style*/
+body {
+    color:black;
+    text-align: left;
+    font-size: medium;
+    font-family: Helvetica, sans-serif;
+    float: none;
+    flex-wrap: none;
+}
+
+/*footer style*/
+footer {
+    text-align: Left; 
+    padding: 20px;
+    font-size: smaller;
+    background-image: linear-gradient(360deg, #f38033, #fff);
+    font-family:Helvetica, sans-serif;
+    img{
+        width: 200px;
+    }
+}
+
+/*flex container*/ 
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: flex-start;
+}
+
+/*flex container*/
+.flex-container > div {
+    background-color:#ffffff;
+    width: 200px;   /* same as below*/
+    height: 450px;  /*dictates the height of the card- I don't know why it's this specifically, but don't touch it unless you want to re-adjust all the card's height*/
+    margin: 20px;
+    padding: 20 px;
+}     
+
+    .title {
+        color: #262095;
+        font-size: 15px;
+        }
+
+/*card box*/
+.card{
+    width: 200px;
+    height: 10%;
+     border: 1px hidden #262095;
+    text-align: center;
+    font-size: smaller;
+    box-shadow: 0 4px 8px #dadada;
+    padding: 0px;
+}
