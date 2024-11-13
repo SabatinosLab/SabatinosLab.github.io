@@ -1,36 +1,28 @@
-html, body {
-    margin: 0;
-    padding: 0;
-}
-
-/* head style */
+/*head style*/
 head {
     background-color: #3595fc;
 }
 
-/* header style */
+/*header style*/
 header {
     text-align: center; 
-    padding: 20px; /* Adjust padding as necessary */
+    padding: 50px;
     font-size: larger;
     background-image: linear-gradient(180deg, #3595fc, #ffffff);
-    font-family: Helvetica, sans-serif;
+    font-family:Helvetica, sans-serif;
     font-weight: bold;
 }
 
-/* navigation bar button style */
+/*navigation bar button style*/
 nav a {
-    color: #262095;
+    color: #251f93;
     text-decoration: none;
     font-size: larger;   
-    padding: 20px; /* Fixed padding from 200px to 20px */
+    padding: 200 px;  
     margin-right: 20px;
     margin-bottom: 20px;
     margin-top: 20px;
-}
-
-nav ul {
-    list-style-type: none;
+    ul{ list-style-type: none;}  
 }
 
 /*body style*/
