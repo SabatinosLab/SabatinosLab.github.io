@@ -1,6 +1,5 @@
 /*section style for logo*/
 section {
-    background-color: #3595fc;
     padding-top: 5px;
     padding-right: 1000px;
     padding-bottom: 50px;
@@ -12,7 +11,6 @@ header {
     text-align: center; 
     padding: 5px;
     font-size: larger;
-    background-image: linear-gradient(180deg, #3595fc, #ffffff);
     font-family:Helvetica, sans-serif;
     font-weight: bold;
 }
@@ -22,7 +20,6 @@ nav a {
     color: #262095;
     text-decoration: none;
     font-size: larger;   
-
     margin-right: 20px;
     margin-bottom: 50px;
     margin-top: 20px;
@@ -52,12 +49,17 @@ body {
 /*footer style*/
 footer {
     text-align: Left; 
-    padding: 20px;
+    padding: 1px;
     font-size: smaller;
-    background-image: linear-gradient(360deg, #f38033, #fff);
     font-family:Helvetica, sans-serif;
     font-size: medium;
     img{
         width: 200px;
         }
+}
+
+/*background color*/
+html {
+    background: rgb(53,149,252);
+    background: linear-gradient(180deg, rgba(53,149,252,1) 0%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 80%, rgba(243,128,51,1) 100%);
 }

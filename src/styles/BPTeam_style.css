@@ -1,6 +1,5 @@
 /*section style for logo*/
 section {
-    /* background-color: #3595fc;*/ /*some how creates an error?? idk, man*/
     padding-top: 5px;
     padding-right: 1000px;
     padding-bottom: 60px;
@@ -9,9 +8,8 @@ section {
 /*header style*/
 header {
     text-align: center; 
-    padding: 5px;
+    padding: 1px;
     font-size: larger;
-    background-image: linear-gradient(180deg, #3595fc, #ffffff);
     font-family:Helvetica, sans-serif;
     font-weight: bold;
 }
@@ -40,9 +38,8 @@ body {
 /*footer style*/
 footer {
     text-align: Left; 
-    padding: 20px;
+    padding: 1px;
     font-size: smaller;
-    background-image: linear-gradient(360deg, #f38033, #fff);
     font-family:Helvetica, sans-serif;
     img{
         width: 200px;
@@ -80,4 +77,10 @@ footer {
     font-size: smaller;
     box-shadow: 0 4px 8px #dadada;
     padding: 0px;
+}
+
+/*background color*/
+html {
+    background: rgb(53,149,252);
+    background: linear-gradient(180deg, rgba(53,149,252,1) 0%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 80%, rgba(243,128,51,1) 100%);
 }
