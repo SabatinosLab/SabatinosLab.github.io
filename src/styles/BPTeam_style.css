@@ -35,6 +35,9 @@ body {
     flex-wrap: none;
 }
 
+/*italicized texts*/
+.emphasized { font-style: italic; }
+
 /*footer style*/
 footer {
     text-align: Left; 
@@ -46,38 +49,93 @@ footer {
     }
 }
 
-/*flex container*/ 
-.flex-container{
+/* Flex container */
+.flex-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; 
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-/*flex container*/
-.flex-container > div {
-    background-color:#ffffff;
-    width: 200px;   /* same as below*/
-    height: 450px;  /*dictates the height of the card- I don't know why it's this specifically, but don't touch it unless you want to re-adjust all the card's height*/
-    margin: 20px;
-    padding: 20 px;
-}     
-
-    .title {
-        color: #262095;
-        font-size: 15px;
-        }
-
-/*card box*/
-.card{
+/* Card container */
+.card {
     width: 200px;
-    height: 10%;
-     border: 1px hidden #262095;
-    text-align: center;
-    font-size: smaller;
-    box-shadow: 0 4px 8px #dadada;
-    padding: 0px;
+    height: 450px;
+    perspective: 1000px; /* Enables 3D effect */
+    margin: 20px;
+    padding: 10px;
+    
 }
+
+/* Card "<p> text" */
+.card p {
+    font-size: 14px;
+}
+
+/* Card "<h1> text" */
+.card h1 {
+    font-size: 22px; 
+    font-weight: bold; 
+    margin: 10px; 
+}
+
+/* Inner card - allows flipping */
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+/* Front & Back of the card */
+.card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    background: white;
+    box-shadow: 0 5px 9px #dadada;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Front card*/
+.card-front {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    padding: 0px; 
+
+    img {
+        width: 200px;
+        height: auto; 
+        max-width: 100%; 
+        display: block; 
+    }
+}
+
+
+/* Back */
+.card-back {
+    transform: rotateY(180deg);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Flip effect when clicked */
+.card.flipped .card-inner {
+    transform:  rotateY(180deg);
+  }
 
 /*background color*/
 html {
